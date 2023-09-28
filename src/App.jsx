@@ -39,7 +39,18 @@ export default function App() {
 
       <div className={styles.wrapper}>
 
-        <div className={styles.mainHeader}>
+      <div className={styles.mainHeader}>
+          <div className={styles.inputMap}>
+            <a href="./assets/Planilha modelo.xlsx" download={"Planilha modelo.xlsx"}>Planilha modelo</a>
+            <label>
+              Upload do arquivo
+            </label>
+            <input
+              type="file" 
+              accept=".xlsx" 
+              onChange={handleFileUpload} 
+            />
+          </div>
           <div className={styles.infoMap}>
             <div>
               Crie um arquivo do excel (.XLSX) como no exemplo abaixo, observe os nomes das colunas:
@@ -52,20 +63,9 @@ export default function App() {
               // height="200" // Altura da imagem (opcional)
             />
           </div>
-
-          <div className={styles.inputMap}>
-            <label>
-              Faça upload do arquivo (.XLSX) se tudo estiver correto, o mapa será gerado.
-            </label>
-            <input
-              type="file" 
-              accept=".xlsx" 
-              onChange={handleFileUpload} 
-            />
-          </div>
         </div>
       
-        <div className="mainContent">
+        <div className={styles.mainContent}>
           <MapContainer data={jsonData} />
           {/* <Map2 /> */}
         </div>

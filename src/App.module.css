@@ -1,19 +1,20 @@
 .wrapper {
-  max-width: 70rem;
+  /* max-width: 70rem; */
   margin: 2rem auto;
   padding: 0 1rem;
 
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: 1fr; */
   gap: 2rem;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .mainHeader {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 .infoMap {
@@ -26,6 +27,11 @@
 .inputMap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.inputMap a {
+  color: var(--green-500);
 }

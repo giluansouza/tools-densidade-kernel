@@ -36,8 +36,6 @@ const MapContainer = ({ data }) => {
   
     const heatData = arrayDeArrays;
 
-    console.log(heatData)
-  
     // Defina a paleta de cores para vermelho (de amarelo para vermelho)
     const gradient = {
       0.1: 'yellow', // Cor mais clara (intensidade baixa)
