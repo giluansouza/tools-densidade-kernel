@@ -41,7 +41,7 @@ export default function App() {
 
       <div className={styles.mainHeader}>
           <div className={styles.inputMap}>
-            <a href="/../src/assets/planilha-de-coordenadas.xlsx" download={"planilha-de-coordenadas.xlsx"}>Planilha modelo</a>
+            <a href="https://docs.google.com/spreadsheets/d/1H98aKoO_-NBN-bnEsO6YjjXLexJ4KERk/edit?usp=drive_link&ouid=109370909611652809334&rtpof=true&sd=true">Planilha modelo</a>
             <label>
               Upload do arquivo
             </label>
