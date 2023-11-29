@@ -38,7 +38,7 @@ const MapContainer = ({ data }) => {
 
     // Defina a paleta de cores para vermelho (de amarelo para vermelho)
     const gradient = {
-      0.1: 'yellow', // Cor mais clara (intensidade baixa)
+      0.1: 'red', // Cor mais clara (intensidade baixa)
       1.0: 'red',    // Cor mais escura (intensidade alta)
     };
   
